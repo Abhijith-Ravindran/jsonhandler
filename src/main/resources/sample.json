@@ -1,0 +1,33 @@
+[
+
+  {
+
+    "username":"Jayesh",
+
+    "userId":100,
+
+    "location":"India"
+
+  },
+
+  {
+
+    "username":"Lara",
+
+    "userId":101,
+
+    "location":"USA"
+
+  },
+
+  {
+
+    "username":"Martin",
+
+    "userId":102,
+
+    "location":"Australia"
+
+  }
+
+]
