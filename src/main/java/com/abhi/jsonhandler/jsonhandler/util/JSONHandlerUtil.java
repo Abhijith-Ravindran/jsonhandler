@@ -43,7 +43,7 @@ public class JSONHandlerUtil {
      * @return void
      */
     public static void jsonObjectPrinter() {
-        logger.info("i/p json=> \n"+userDtoList);
+        logger.info("\no/p json=> \n"+userDtoList);
     }
 
     /**
