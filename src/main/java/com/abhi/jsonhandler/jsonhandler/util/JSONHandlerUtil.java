@@ -9,8 +9,11 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.logging.Logger;
 
 public class JSONHandlerUtil {
+
+    private static Logger logger;
     /**
      * Contains the list of userDto objects
      */
@@ -24,6 +27,7 @@ public class JSONHandlerUtil {
     public JSONHandlerUtil(String fileName) throws URISyntaxException {
         userDtoList = new ArrayList<>();
         file = getFile(fileName);
+        logger = Logger.getLogger(JSONHandlerUtil.class.getCanonicalName());
     }
 
     /**
@@ -39,7 +43,7 @@ public class JSONHandlerUtil {
      * @return void
      */
     public static void jsonObjectPrinter() {
-        System.out.println("i/p json=> \n"+userDtoList);
+        logger.info("i/p json=> \n"+userDtoList);
     }
 
     /**
